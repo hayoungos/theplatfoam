@@ -12,7 +12,7 @@ body {
     #000000
   ); /* 아래에서 위로 변화하는 그라디언트 */
   background-size: 100% 300%; /* 배경 크기 설정 */
-  animation: darken-rise 12s ease-in-out forwards; /* 애니메이션 적용 (멈춤 포함) */
+  animation: darken-rise 15s ease-in-out forwards; /* 애니메이션 적용 (멈춤 포함) */
 }
 
 /* 애니메이션 정의 */
@@ -355,7 +355,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 12s;
+  animation-delay: 11s;
 }
 
 .cast2 {
@@ -366,7 +366,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 12.5s;
+  animation-delay: 11.5s;
 }
 
 .cast3 {
@@ -377,7 +377,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 13.5s;
+  animation-delay: 12.5s;
 }
 
 .cast4 {
@@ -388,7 +388,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 14.5s;
+  animation-delay: 13.5s;
 }
 
 .cast5 {
@@ -399,7 +399,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 15s;
+  animation-delay: 14s;
 }
 
 .title {
@@ -410,7 +410,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 17s;
+  animation-delay: 16s;
 }
 
 .director {
@@ -421,7 +421,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 17.5s;
+  animation-delay: 16.5s;
 }
 
 @keyframes fadeIn {
