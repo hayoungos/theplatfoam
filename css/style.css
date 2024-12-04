@@ -220,7 +220,7 @@ body {
   align-items: center;
   z-index: 2;
   animation: slideDownToPosition 2s ease-out forwards,
-    fadeSequence1 5.9s 5s forwards; /* 내려오는 애니메이션과 페이드 애니메이션 */
+    fadeSequence1 3.5s 4s forwards; /* 내려오는 애니메이션과 페이드 애니메이션 */
 }
 
 /* 내려오는 애니메이션 정의 */
@@ -253,7 +253,7 @@ body {
   z-index: 2;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeSequence 10s forwards; /* 10초 동안 애니메이션 반복 */
-  animation-delay: 6.2s; /* 2초 후 */
+  animation-delay: 3.9s; /* 2초 후 */
 }
 
 .platfoam3 {
@@ -263,8 +263,8 @@ body {
   align-items: center;
   z-index: 2;
   opacity: 0; /* 기본적으로 투명하게 설정 */
-  animation: fadeSequence 10s forwards; /* 10초 동안 애니메이션 반복 */
-  animation-delay: 7.5s; /* 4초 후 */
+  animation: fadeSequence 12s forwards; /* 10초 동안 애니메이션 반복 */
+  animation-delay: 5.5s; /* 4초 후 */
 }
 
 .platfoam4 {
@@ -275,7 +275,7 @@ body {
   z-index: 2;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: smoothFadeIn 2.9s ease-in-out forwards; /* 부드럽게 페이드인 */
-  animation-delay: 9.5s; /* 11초 후 시작 */
+  animation-delay: 8s; /* 11초 후 시작 */
 }
 
 /* 부드러운 페이드인 애니메이션 */
@@ -313,21 +313,18 @@ body {
   align-items: center;
   z-index: 2;
   opacity: 0; /* 기본적으로 투명하게 설정 */
-  animation: fadeSequence2 14s ease-in;
-  animation-delay: 7.7s;
+  animation: fadeSequence2 17s ease-in;
+  animation-delay: 2.5s;
 }
 
 @keyframes fadeSequence2 {
   0%,
-  20% {
+  40% {
     opacity: 0; /* 완전히 보임 */
     top: 162px; /* 지정된 위치 */
   }
-  40% {
-    opacity: 1; /* 투명해짐 */
-    top: 162px; /* 그대로 머무름 */
-  }
-  50% {
+  50%,
+  70% {
     opacity: 1;
     top: 162px; /* 1초 동안 대기 */
   }
@@ -410,7 +407,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 16s;
+  animation-delay: 15.5s;
 }
 
 .director {
@@ -421,7 +418,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 16.5s;
+  animation-delay: 16s;
 }
 
 @keyframes fadeIn {
