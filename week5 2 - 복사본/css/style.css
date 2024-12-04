@@ -1,0 +1,435 @@
+body {
+  margin: 0;
+  height: 100vh; /* 화면 전체 높이 */
+  overflow: hidden; /* 스크롤바 방지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #063e51,
+    #000000
+  ); /* 아래에서 위로 변화하는 그라디언트 */
+  background-size: 100% 300%; /* 배경 크기 설정 */
+  animation: darken-rise 12s ease-in-out forwards; /* 애니메이션 적용 (멈춤 포함) */
+}
+
+/* 애니메이션 정의 */
+@keyframes darken-rise {
+  0% {
+    background-position: 0% 0%; /* 하얀색이 화면 전체 */
+  }
+  50% {
+    background-position: 0% 50%; /* 중간 정도로 어두운 색 상승 */
+  }
+  100% {
+    background-position: 0% 100%; /* 어두운 색이 화면 전체 */
+  }
+}
+
+.lights {
+  display: flex;
+  gap: 10px; /* 자식 요소 간 간격 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: absolute;
+  bottom: -100%;
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+}
+
+.lights img {
+  width: 300px; /* 이미지 너비 */
+  height: auto; /* 비율 유지 */
+  margin: 0 50px; /* 양옆 간격 */
+}
+
+.floor,
+.leftf,
+.rightf {
+  position: absolute;
+  bottom: -150%; /* 화면 아래 시작 위치 */
+  width: 100%; /* floor는 화면 전체, leftf와 rightf는 기존 크기 유지 */
+  height: auto; /* 콘텐츠 높이에 맞춤 */
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 1s;
+}
+
+.leftf {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  left: 0px;
+  z-index: 2;
+}
+
+.rightf {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  right: 0px;
+  z-index: 2;
+}
+
+.lights2 {
+  display: flex;
+  gap: 10px; /* 자식 요소 간 간격 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: absolute;
+  bottom: -100%;
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 2s;
+}
+
+.lights2 img {
+  width: 300px; /* 이미지 너비 */
+  height: auto; /* 비율 유지 */
+  margin: 0 50px; /* 양옆 간격 */
+}
+
+.floor2,
+.leftf2,
+.rightf2 {
+  position: absolute;
+  bottom: -150%; /* 화면 아래 시작 위치 */
+  width: 100%; /* floor는 화면 전체, leftf와 rightf는 기존 크기 유지 */
+  height: auto; /* 콘텐츠 높이에 맞춤 */
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 3s;
+}
+
+.leftf2 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  left: 0px;
+  z-index: 2;
+}
+
+.rightf2 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  right: 0px;
+  z-index: 2;
+}
+
+.lights3 {
+  display: flex;
+  gap: 10px; /* 자식 요소 간 간격 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: absolute;
+  bottom: -100%;
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 4s;
+}
+
+.lights3 img {
+  width: 300px; /* 이미지 너비 */
+  height: auto; /* 비율 유지 */
+  margin: 0 50px; /* 양옆 간격 */
+}
+
+.floor3,
+.leftf3,
+.rightf3 {
+  position: absolute;
+  bottom: -150%; /* 화면 아래 시작 위치 */
+  width: 100%; /* floor는 화면 전체, leftf와 rightf는 기존 크기 유지 */
+  height: auto; /* 콘텐츠 높이에 맞춤 */
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 5s;
+}
+
+.leftf3 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  left: 0px;
+  z-index: 2;
+}
+
+.rightf3 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  right: 0px;
+  z-index: 2;
+}
+
+.lights4 {
+  display: flex;
+  gap: 10px; /* 자식 요소 간 간격 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: absolute;
+  bottom: -100%;
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 6s;
+}
+
+.lights4 img {
+  width: 300px; /* 이미지 너비 */
+  height: auto; /* 비율 유지 */
+  margin: 0 50px; /* 양옆 간격 */
+}
+
+.floor4,
+.leftf4,
+.rightf4 {
+  position: absolute;
+  bottom: -150%; /* 화면 아래 시작 위치 */
+  width: 100%; /* floor는 화면 전체, leftf와 rightf는 기존 크기 유지 */
+  height: auto; /* 콘텐츠 높이에 맞춤 */
+  animation: slideUpAndOut 5s linear forwards; /* 일정 속도로 위로 이동 후 화면 밖으로 */
+  animation-delay: 7s;
+}
+
+.leftf4 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  left: 0px;
+  z-index: 2;
+}
+
+.rightf4 {
+  width: 430px;
+  position: absolute;
+  bottom: -150%;
+  right: 0px;
+  z-index: 2;
+}
+
+/* slideUpAndOut 애니메이션 정의 */
+@keyframes slideUpAndOut {
+  0% {
+    bottom: -100%; /* 화면 아래 시작 */
+  }
+  100% {
+    bottom: 100%; /* 화면 위로 완전히 사라짐 */
+  }
+}
+
+.platfoam1 {
+  width: 700px;
+  position: absolute;
+  top: -200px; /* 화면 위쪽 밖에서 시작 */
+  align-items: center;
+  z-index: 2;
+  animation: slideDownToPosition 2s ease-out forwards,
+    fadeSequence1 5.9s 5s forwards; /* 내려오는 애니메이션과 페이드 애니메이션 */
+}
+
+/* 내려오는 애니메이션 정의 */
+@keyframes slideDownToPosition {
+  0% {
+    top: -200px; /* 화면 위쪽 밖에서 시작 */
+  }
+  100% {
+    top: 147px; /* 지정된 위치에 도달 */
+  }
+}
+
+/* 페이드 애니메이션 (기존) */
+@keyframes fadeSequence1 {
+  0%,
+  20% {
+    opacity: 1; /* 완전히 보임 */
+  }
+  40%,
+  100% {
+    opacity: 0; /* 완전히 사라짐 */
+  }
+}
+
+.platfoam2 {
+  width: 700px;
+  position: absolute;
+  top: 180px;
+  align-items: center;
+  z-index: 2;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeSequence 10s forwards; /* 10초 동안 애니메이션 반복 */
+  animation-delay: 6.2s; /* 2초 후 */
+}
+
+.platfoam3 {
+  width: 700px;
+  position: absolute;
+  top: 277px;
+  align-items: center;
+  z-index: 2;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeSequence 10s forwards; /* 10초 동안 애니메이션 반복 */
+  animation-delay: 7.5s; /* 4초 후 */
+}
+
+.platfoam4 {
+  width: 700px;
+  position: absolute;
+  top: 126px;
+  align-items: center;
+  z-index: 2;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: smoothFadeIn 2.9s ease-in-out forwards; /* 부드럽게 페이드인 */
+  animation-delay: 9.5s; /* 11초 후 시작 */
+}
+
+/* 부드러운 페이드인 애니메이션 */
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0; /* 완전히 투명 */
+  }
+  30% {
+    opacity: 0.9; /* 약간 보이기 시작 */
+  }
+  60% {
+    opacity: 1; /* 점점 더 보이기 시작 */
+  }
+  100% {
+    opacity: 0; /* 완전히 보임 */
+  }
+}
+
+/* 페이드아웃/페이드인 키프레임 */
+@keyframes fadeSequence {
+  0%,
+  20% {
+    opacity: 1; /* 완전히 보임 */
+  }
+  40%,
+  100% {
+    opacity: 0; /* 완전히 사라짐 */
+  }
+}
+
+.platfoam5 {
+  width: 700px;
+  position: absolute;
+  top: 162px;
+  align-items: center;
+  z-index: 2;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeSequence2 14s ease-in;
+  animation-delay: 7.7s;
+}
+
+@keyframes fadeSequence2 {
+  0%,
+  20% {
+    opacity: 0; /* 완전히 보임 */
+    top: 162px; /* 지정된 위치 */
+  }
+  40% {
+    opacity: 1; /* 투명해짐 */
+    top: 162px; /* 그대로 머무름 */
+  }
+  50% {
+    opacity: 1;
+    top: 162px; /* 1초 동안 대기 */
+  }
+  100% {
+    opacity: 1;
+    top: 200vh; /* 화면 밖 아래로 이동 */
+  }
+}
+
+.bgline {
+  display: flex; /* 자식 요소들을 일렬로 배치 */
+  gap: 400px; /* 이미지 간격 설정 */
+  justify-content: center; /* 가운데 정렬 */
+  flex-wrap: wrap; /* 화면 크기에 따라 여러 줄로 나열되도록 설정 */
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+.cast1 {
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 12s;
+}
+
+.cast2 {
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 12.5s;
+}
+
+.cast3 {
+  width: 100px;
+  position: absolute;
+  top: 205px;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 13.5s;
+}
+
+.cast4 {
+  width: 140px;
+  position: absolute;
+  top: 290px;
+  left: 200px;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 14.5s;
+}
+
+.cast5 {
+  width: 80px;
+  position: absolute;
+  top: 290px;
+  right: 200px;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 15s;
+}
+
+.title {
+  width: 500px;
+  position: absolute;
+  top: 380px;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 17s;
+}
+
+.director {
+  width: 200px;
+  position: absolute;
+  top: 600px;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  animation: fadeIn 10s forwards;
+  animation-delay: 17.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
