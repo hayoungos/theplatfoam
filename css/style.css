@@ -407,7 +407,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 15.5s;
+  animation-delay: 15s;
 }
 
 .director {
@@ -418,7 +418,7 @@ body {
   z-index: 3;
   opacity: 0; /* 기본적으로 투명하게 설정 */
   animation: fadeIn 10s forwards;
-  animation-delay: 16s;
+  animation-delay: 15.5s;
 }
 
 @keyframes fadeIn {
